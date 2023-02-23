@@ -31,8 +31,6 @@ class LetterAdapter(
     override fun onBindViewHolder(holder: LetterViewHolder, position: Int) {
         val letter = letters[position]
         holder.button.text=letter
-        //holder.bind(letter, clickListener)
-        // holder.button.text = letter
         holder.button.setOnClickListener { clickListener.onLetterClicked(letter) }
 
     }
